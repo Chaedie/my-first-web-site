@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+      <script>
+        function OnePlusOne(){
+          document.write(1+1+'<br />');
+        }
+        OnePlusOne();
+        function Sum(left,right){
+          document.write(left+right+'<br />');
+        }
+        Sum(2,3);
+        Sum(3,4);
+      </script>
+    <h2>Return</h2>
+    <script>
+      function Sum2(left,right){
+        return left+right;
+      }
+      document.write(Sum2(2,3)+'<br />');
+      document.write('<div style="color:red">'+Sum2(2,3)+'</div>');
+      document.write('<div style="font-size:3rem;"">'+Sum2(2,3)+'<br />');
+
+    </script>
+  </body>
+</html>
